@@ -40,6 +40,6 @@ class WordAnalysis
   end
 
   def get_top(values, amount)
-    Hash[*values.sort_by{|k, v| v}.reverse.take(amount).flatten]
+    Hash[values.sort_by{|k, v| v}.reverse.take(amount)]
   end
 end
